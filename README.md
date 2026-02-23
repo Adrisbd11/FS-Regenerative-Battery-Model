@@ -44,7 +44,7 @@ After the track success, I developed a **Battery Equivalent Circuit Model (ECM)*
 | :--- | :--- | :--- |
 | **Regen Energy Recovery** | < 1% per lap | **20% per lap** |
 | **Endurance Completion** | 7-year DNF streak | **Finished 2 World-Class Events** |
-| **BMS Stability** | Frequent Crashes | **100% Reliability** |
+| **BMS Stability** | Frequent Crashes | **Reliability** |
 | **Max System Voltage** | Underutilized | **Optimized near 600V** |
 
 ---
