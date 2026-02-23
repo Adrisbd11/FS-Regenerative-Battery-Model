@@ -40,20 +40,23 @@ After the track success, I developed a **Battery Equivalent Circuit Model (ECM)*
 * **Legacy:** Provides the empirical evidence needed to downsize the battery pack for next season's car.
 
 ---
+## Data Registered in Formula Student Austria:
+![BCN eMotorsport Prototype ](images/FSA_Regen.png)
+20% Energy Recovery during the Endurance Event.
+![BCN eMotorsport Prototype ](images/Comparison_long_vel.png)
 
+---
 ## Key Performance Indicators (KPIs)
 
 | Metric | Before | After |
 | :--- | :--- | :--- |
 | **Regen Energy Recovery** | < 1% per lap | **20% per lap** |
+| **Average Longitudinal Velocity** |**7.25 m/s**  | **9.16 m/s** |
 | **Endurance Completion** | 7-year DNF streak | **Finished 2 World-Class Events** |
 | **BMS Stability** | Frequent Crashes | **Reliability** |
 | **Max System Voltage** | Underutilized | **Optimized near 600V** |
 ---
-Data Registered in Formula Student Austria:
-![BCN eMotorsport Prototype ](images/FSA_Regen.png)
-20% Energy Recovery during the Endurance Event.
----
+
 
 ## Tech Stack
 * **Software:** MATLAB / Simulink, Python (Data Analysis).
