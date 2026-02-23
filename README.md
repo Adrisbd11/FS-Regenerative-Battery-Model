@@ -1,36 +1,60 @@
-# FS-Regenerative-Battery-Model
-Impact: Boosted energy recovery from &lt;1% to 20% per lap. I diagnosed critical hardware flaws in the BMS (IC supply/isolation) and developed a high-fidelity Battery Model (ECM) via experimental Cell Testing. This allowed the team to break a 7-year streak and complete the 22km Endurance Event for the first time since 2017.
+# FS-Regenerative-Battery-Model: Breaking the 7-Year Endurance Curse
 
-🏎 Real-World Validation: Breaking the Endurance Curse
-Context & Strategy
-In Formula Student, the Endurance Event (22km) is the ultimate test. For 7 years, the team struggled to finish due to a "Weight-Regen Paradox": we carried a heavy 7-8 kWh battery because we lacked efficient regeneration, but we couldn't reduce weight without a proven regen system.
+### 🏎 What is Formula Student?
+**Formula Student (FS)** is the world’s most prestigious engineering competition for universities. It challenges teams to design, build, and race a formula-style vehicle from scratch. It is not just a race; it is a test of project management, cost efficiency, and cutting-edge engineering.
 
-My role was to break this cycle by proving that we could push the battery limits safely.
+The **Endurance Event** is the crown jewel: a 22km non-stop race that tests the vehicle's reliability and thermal management to the absolute limit. Finishing an Endurance is the ultimate proof of a car's engineering integrity.
+![BCN eMotorsport Prototype ](images/)
 
-1. Hardware Recovery & Track Success
-Before building any models, we had to fix the foundation. I performed a deep diagnostic of the legacy BMS (Battery Management System), identifying critical flaws in the IC supply architecture and isolation transformer terminations.
+---
 
-The Result: With a stable BMS and a new regeneration strategy, we didn't just compete; we finished the two most prestigious Formula Student competitions in the world. We moved from a negligible <1% energy recovery to a solid 20% per lap, proving the system's reliability under real racing conditions.
+## 🎯 The Strategic Challenge: The Weight-Regen Paradox
+Historically, the team carried a heavy **7-8 kWh battery pack** to ensure finishing the race. We couldn't reduce weight because we lacked efficient regeneration, and we couldn't implement regeneration without a reliable BMS.
 
-2. Experimental Validation (The Melasta Test)
-To justify this 20% regen, I had to challenge the manufacturer's (Melasta) conservative limits:
+**My mission:** Break this cycle by proving we could safely push the battery limits to enable future weight reduction.
 
-The Insight: Analysis of previous years' data showed that cell temperatures remained stable at peak currents.
+---
 
-The Test: I built a custom cell testbench to stress-test the Li-ion cells. I demonstrated that our thermal management could handle significantly higher charge currents than specified in the standard datasheet.
+## 🛠 Technical Pillars of the Project
 
-Efficiency: By pushing the battery closer to its 600V limit, we leveraged the Joule Effect to minimize losses, maximizing every joule recovered during braking.
+### 1. Hardware Recovery: Fixing the BMS Foundation
+Before software optimization, we needed a stable platform. I performed a deep diagnostic of the legacy **Battery Management System (BMS)**.
+* **The Problem:** Signal noise and system crashes during high-current events.
+* **The Diagnosis:** Identified critical flaws in the IC supply architecture and incorrect isolation transformer terminations. 
+* **The Result:** A robust hardware interface capable of handling high-frequency current spikes during aggressive braking.
 
-3. The Predictive Model (Post-Race Engineering)
-Once the system was proven on track, I developed a Battery Equivalent Circuit Model (ECM).
+### 2. Experimental Validation: The Melasta Challenge
+Manufacturer datasheets are often conservative. To reach 20% regeneration, I challenged the **Melasta Li-ion cells** limits.
+* **Testbench:** Built a custom testing rack to monitor real-time thermal gradients and internal resistance.
+* **The Insight:** Previous track data showed stable temperatures. My tests confirmed that our cooling system could dissipate the heat from higher regen currents safely.
+* **Efficiency:** Operating closer to the **600V limit** reduced losses through the Joule Effect:
+  $$P_{loss} = I^2 \cdot R$$
 
-Purpose: This model wasn't just a theoretical exercise; it was built using the successful track data and cell tests to perform Weight Reduction Simulations.
+### 3. The Predictive Model: Engineering the Future
+After the track success, I developed a **Battery Equivalent Circuit Model (ECM)** in MATLAB/Simulink.
+* **Verification:** Calibrated using real telemetry from our successful world-class races.
+* **Simulation:** The ECM now allows the team to simulate the "Worst Case" Endurance scenario. 
+* **Legacy:** Provides the empirical evidence needed to downsize the battery pack for next season's car.
 
-Legacy: The model now serves as the roadmap for future seasons, providing the empirical proof needed to downsize the battery pack (weight reduction) while maintaining the energy security required to finish an Endurance.
+---
 
-🏆 Key Achievements
-Reliability: Successfully finished 2 world-class Endurance events (first time in 7 years).
+## 🏆 Key Performance Indicators (KPIs)
 
-Efficiency: 20% energy recovery per lap.
+| Metric | Before | After |
+| :--- | :--- | :--- |
+| **Regen Energy Recovery** | < 1% per lap | **20% per lap** |
+| **Endurance Completion** | 7-year DNF streak | **Finished 2 World-Class Events** |
+| **BMS Stability** | Frequent Crashes | **100% Reliability** |
+| **Max System Voltage** | Underutilized | **Optimized near 600V** |
 
-Future-Proofing: Developed the ECM for next-gen weight reduction strategies.
+---
+
+## 💻 Tech Stack
+* **Software:** MATLAB / Simulink, Python (Data Analysis).
+* **Hardware:** BMS Architecture, High-Voltage Systems, CAN Bus.
+* **Methodologies:** Root Cause Analysis (RCA), Experimental Testing, ECM Modeling.
+
+---
+
+## 📂 Documentation
+Full technical details, including PCB diagnostics and cell test data, can be found in the [docs](./docs) folder.
