@@ -1,6 +1,6 @@
 # FS-Regenerative-Battery-Model: Breaking the 7-Year Endurance Curse
 
-### 🏎 What is Formula Student?
+### What is Formula Student?
 **Formula Student (FS)** is the world’s most prestigious engineering competition for universities. It challenges teams to design, build, and race a formula-style vehicle from scratch. It is not just a race; it is a test of project management, cost efficiency, and cutting-edge engineering.
 
 The **Endurance Event** is the crown jewel: a 22km non-stop race that tests the vehicle's reliability and thermal management to the absolute limit. Finishing an Endurance is the ultimate proof of a car's engineering integrity.
@@ -8,14 +8,14 @@ The **Endurance Event** is the crown jewel: a 22km non-stop race that tests the 
 
 ---
 
-## 🎯 The Strategic Challenge: The Weight-Regen Paradox
+## The Strategic Challenge: The Weight-Regen Paradox
 Historically, the team carried a heavy **7-8 kWh battery pack** to ensure finishing the race. We couldn't reduce weight because we lacked efficient regeneration, and we couldn't implement regeneration without a reliable BMS.
 
 **My mission:** Break this cycle by proving we could safely push the battery limits to enable future weight reduction.
 
 ---
 
-## 🛠 Technical Pillars of the Project
+## Technical Pillars of the Project
 
 ### 1. Hardware Recovery: Fixing the BMS Foundation
 Before software optimization, we needed a stable platform. I performed a deep diagnostic of the legacy **Battery Management System (BMS)**.
@@ -38,7 +38,7 @@ After the track success, I developed a **Battery Equivalent Circuit Model (ECM)*
 
 ---
 
-## 🏆 Key Performance Indicators (KPIs)
+## Key Performance Indicators (KPIs)
 
 | Metric | Before | After |
 | :--- | :--- | :--- |
@@ -49,7 +49,7 @@ After the track success, I developed a **Battery Equivalent Circuit Model (ECM)*
 
 ---
 
-## 💻 Tech Stack
+## Tech Stack
 * **Software:** MATLAB / Simulink, Python (Data Analysis).
 * **Hardware:** BMS Architecture, High-Voltage Systems, CAN Bus.
 * **Methodologies:** Root Cause Analysis (RCA), Experimental Testing, ECM Modeling.
