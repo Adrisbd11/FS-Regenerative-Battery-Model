@@ -41,22 +41,23 @@ After the track success, I developed a **Battery Equivalent Circuit Model (ECM)*
 
 ---
 ## Data Registered in Formula Student Austria:
-![BCN eMotorsport Prototype ](images/FSA_Regen.png)
-20% Energy Recovery during the Endurance Event.
+### 📈 Energy Consumption & Recovery Analysis
+The following plot shows the real telemetry data from the **FSA 2025 Endurance Event**.
+
+<p align="center">
+  <img src="images/FSA_Regen.png" width="800">
+</p>
+
+**Key Data Point:** We recovered **918.1 Wh** against a net consumption of **4441.1 Wh**, achieving a real-world regenerative efficiency of **20.6%**. This confirms that the Battery Equivalent Circuit Model (ECM) and the hardware fixes were successful in a high-performance racing environment.
+
+
 ![BCN eMotorsport Prototype ](images/Comparison_long_vel.png)
-
+### Track Performance: The "Race Pace" Advantage
+The optimization went beyond energy saving. By increasing the regenerative braking ceiling:
+1. **Later Braking Points:** Drivers could brake deeper into curves, reducing lap times.
+2. **Pedal Confidence:** The increased braking torque provided a more aggressive and predictable deceleration curve.
+3. **Thermal Balance:** By shifting more braking work to the motors, we reduced the thermal load on the mechanical friction brakes, maintaining consistent performance throughout the 22km.
 ---
-## Key Performance Indicators (KPIs)
-
-| Metric | Before | After |
-| :--- | :--- | :--- |
-| **Regen Energy Recovery** | < 1% per lap | **20% per lap** |
-| **Average Longitudinal Velocity** |**7.25 m/s**  | **9.16 m/s** |
-| **Endurance Completion** | 7-year DNF streak | **Finished 2 World-Class Events** |
-| **BMS Stability** | Frequent Crashes | **Reliability** |
-| **Max System Voltage** | Underutilized | **Optimized near 600V** |
----
-
 
 ## Tech Stack
 * **Software:** MATLAB / Simulink, Python (Data Analysis).
