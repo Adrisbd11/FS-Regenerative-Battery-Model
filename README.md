@@ -4,6 +4,8 @@
 **Formula Student (FS)** is the world’s most prestigious engineering competition for universities. It challenges teams to design, build, and race a formula-style vehicle from scratch. It is not just a race; it is a test of project management, cost efficiency, and cutting-edge engineering.
 
 The **Endurance Event** is the crown jewel: a 22km non-stop race that tests the vehicle's reliability and thermal management to the absolute limit. Finishing an Endurance is the ultimate proof of a car's engineering integrity.
+
+BCN eMotorsport Prototype:
 ![BCN eMotorsport Prototype ](images/BCNeMotorsport_CAT.jpg)
 
 ---
@@ -47,8 +49,9 @@ After the track success, I developed a **Battery Equivalent Circuit Model (ECM)*
 | **Endurance Completion** | 7-year DNF streak | **Finished 2 World-Class Events** |
 | **BMS Stability** | Frequent Crashes | **Reliability** |
 | **Max System Voltage** | Underutilized | **Optimized near 600V** |
-
+Data Registered in Formula Student Austria:
 ![BCN eMotorsport Prototype ](images/FSA_Regen.png)
+20% Energy Recovery during the Endurance Event.
 ---
 
 ## Tech Stack
