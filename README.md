@@ -1,6 +1,6 @@
 # FS-Regenerative-Battery-Model: Breaking the 7-Year Endurance Curse
 
-### What is Formula Student?
+## What is Formula Student?
 **Formula Student (FS)** is the world’s most prestigious engineering competition for universities. It challenges teams to design, build, and race a formula-style vehicle from scratch. It is not just a race; it is a test of project management, cost efficiency, and cutting-edge engineering.
 
 The **Endurance Event** is the crown jewel: a 22km non-stop race that tests the vehicle's reliability and thermal management to the absolute limit. Finishing an Endurance is the ultimate proof of a car's engineering integrity.
