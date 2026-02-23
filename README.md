@@ -57,6 +57,7 @@ The optimization went beyond energy saving. By increasing the regenerative braki
 1. **Later Braking Points:** Drivers could brake deeper into curves, reducing lap times.
 2. **Pedal Confidence:** The increased braking torque provided a more aggressive and predictable deceleration curve.
 3. **Thermal Balance:** By shifting more braking work to the motors, we reduced the thermal load on the mechanical friction brakes, maintaining consistent performance throughout the 22km.
+We weren't just more efficient; we were objectively faster.
 ---
 
 ## Tech Stack
