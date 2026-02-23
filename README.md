@@ -30,6 +30,7 @@ Manufacturer datasheets are often conservative. To reach 20% regeneration, I cha
 * **Efficiency:** Operating closer to the **600V limit** reduced losses through the Joule Effect:
   $$P_{loss} = I^2 \cdot R$$
 
+
 ### 3. The Predictive Model: Engineering the Future
 After the track success, I developed a **Battery Equivalent Circuit Model (ECM)** in MATLAB/Simulink.
 * **Verification:** Calibrated using real telemetry from our successful world-class races.
@@ -47,6 +48,7 @@ After the track success, I developed a **Battery Equivalent Circuit Model (ECM)*
 | **BMS Stability** | Frequent Crashes | **Reliability** |
 | **Max System Voltage** | Underutilized | **Optimized near 600V** |
 
+![BCN eMotorsport Prototype ](images/FSA_Regen.png)
 ---
 
 ## Tech Stack
