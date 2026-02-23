@@ -22,7 +22,7 @@ Before software optimization, we needed a stable platform. I performed a deep di
 * **The Problem:** Signal noise and system crashes during high-current events.
 * **The Diagnosis:** Identified critical flaws in the IC supply architecture and incorrect isolation transformer terminations. 
 * **The Result:** A robust hardware interface capable of handling high-frequency current spikes during aggressive braking.
-
+![BMS Debugging ](images/BMS_debug.png)
 ### 2. Experimental Validation: The Melasta Challenge
 Manufacturer datasheets are often conservative. To reach 20% regeneration, I challenged the **Melasta Li-ion cells** limits.
 * **Testbench:** Built a custom testing rack to monitor real-time thermal gradients and internal resistance.
